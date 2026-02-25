@@ -4,11 +4,15 @@ import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 
 const slides = [
-  { src: "/images/hero-slide-1.png", alt: "Erix Coach and Car Limo Service" },
-  { src: "/images/hero-slide-2.png", alt: "Erix Coach luxury SUV transportation" },
-  { src: "/images/hero-slide-3.jpg", alt: "Erix Coach and Car black car service" },
-  { src: "/images/hero-slide-4.jpg", alt: "Professional limousine service Minneapolis" },
-  { src: "/images/hero-slide-5.png", alt: "Erix Coach - Driven to Succeed" },
+  { src: "/images/hero-slide-6.webp", alt: "ERIXMN.com luxury transportation", isLogo: false },
+  { src: "/images/hero-slide-8.webp", alt: "Erix Coach Cadillac Escalade SUV", isLogo: false },
+  { src: "/images/hero-slide-1.webp", alt: "Erix Coach and Car Limo Service", isLogo: false },
+  { src: "/images/hero-slide-3.webp", alt: "Erix Coach and Car black car service", isLogo: false },
+  { src: "/images/hero-slide-4.webp", alt: "Professional limousine service Minneapolis", isLogo: false },
+  { src: "/images/hero-slide-5.webp", alt: "Erix Coach - Driven to Succeed", isLogo: false },
+  { src: "/images/hero-slide-2.webp", alt: "Erix Coach luxury SUV transportation", isLogo: false },
+  { src: "/images/hero-slide-9.webp", alt: "Erix Coach LLC logo", isLogo: true },
+  { src: "/images/hero-slide-7.webp", alt: "Erix Coach and Car branding", isLogo: true },
 ];
 
 export default function HeroSlideshow() {
@@ -38,16 +42,20 @@ export default function HeroSlideshow() {
       {slides.map((slide, i) => (
         <div
           key={slide.src}
-          className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            slide.isLogo ? "bg-black" : ""
+          }`}
           style={{ opacity: i === current ? 1 : 0 }}
         >
           <Image
             src={slide.src}
             alt={slide.alt}
             fill
-            className="object-cover"
+            className={slide.isLogo ? "object-contain p-16" : "object-cover"}
             priority={i === 0}
+            loading={i === 0 ? "eager" : "lazy"}
             sizes="100vw"
+            quality={80}
           />
         </div>
       ))}
