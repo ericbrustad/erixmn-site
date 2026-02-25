@@ -6,10 +6,12 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-dark overflow-hidden">
+      <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
         <HeroSlideshow />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/50 z-[1]" />
         
-        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center drop-shadow-lg">
           <p className="text-gold uppercase tracking-[0.3em] text-sm mb-4">
             Minneapolis Luxury Transportation
           </p>
@@ -61,7 +63,7 @@ export default function Home() {
       </section>
 
       {/* AC by Marriott Section */}
-      <section className="bg-dark py-16 sm:py-20">
+      <section className="relative z-10 bg-dark py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             AC by Marriott Bloomington Mall of America
@@ -81,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* Gift Cards Section */}
-      <section className="bg-darker py-16 sm:py-20">
+      <section className="relative z-10 bg-darker py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gold/10 rounded-full mb-6">
             <Gift className="text-gold" size={32} />
@@ -105,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* What We Do Section */}
-      <section className="bg-dark py-16 sm:py-24">
+      <section className="relative z-10 bg-dark py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-4">
             What We Do
@@ -163,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="bg-darker py-16 sm:py-24">
+      <section className="relative z-10 bg-darker py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-4">
             About Erix Coach LLC
@@ -232,7 +234,7 @@ export default function Home() {
       </section>
 
       {/* Google Reviews CTA */}
-      <section className="bg-dark py-12">
+      <section className="relative z-10 bg-dark py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-gold text-lg mb-4">★★★★★</p>
           <a

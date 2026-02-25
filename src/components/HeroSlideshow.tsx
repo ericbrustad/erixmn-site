@@ -36,7 +36,7 @@ export default function HeroSlideshow() {
   }, [current, goToSlide]);
 
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="fixed inset-0 overflow-hidden z-0">
       {/* Slides */}
       {slides.map((slide, i) => (
         <div
@@ -58,9 +58,6 @@ export default function HeroSlideshow() {
           />
         </div>
       ))}
-
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/60" />
 
       {/* Bottom gradient */}
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-dark to-transparent" />

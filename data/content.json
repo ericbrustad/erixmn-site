@@ -1,0 +1,101 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "email": "info@erixmn.com",
+      "passwordHash": "$2b$10$2z9j5OuKt.7Q3WCufZ.f8ewnm7AarGE5yL.43QfVRBFl7afwuu6Ea",
+      "name": "Erix Admin",
+      "role": "admin",
+      "createdAt": "2025-01-01T00:00:00.000Z"
+    }
+  ],
+  "slides": [
+    { "id": "s1", "src": "/images/hero-slide-6.webp", "alt": "ERIXMN.com luxury transportation", "order": 0, "isLogo": false },
+    { "id": "s2", "src": "/images/hero-slide-8.webp", "alt": "Erix Coach Cadillac Escalade SUV", "order": 1, "isLogo": false },
+    { "id": "s3", "src": "/images/hero-slide-1.webp", "alt": "Erix Coach and Car Limo Service", "order": 2, "isLogo": false },
+    { "id": "s4", "src": "/images/hero-slide-3.webp", "alt": "Erix Coach and Car black car service", "order": 3, "isLogo": false },
+    { "id": "s5", "src": "/images/hero-slide-4.webp", "alt": "Professional limousine service Minneapolis", "order": 4, "isLogo": false },
+    { "id": "s6", "src": "/images/hero-slide-5.webp", "alt": "Erix Coach - Driven to Succeed", "order": 5, "isLogo": false },
+    { "id": "s7", "src": "/images/hero-slide-2.webp", "alt": "Erix Coach luxury SUV transportation", "order": 6, "isLogo": false },
+    { "id": "s8", "src": "/images/hero-slide-9.webp", "alt": "Erix Coach LLC logo", "order": 7, "isLogo": true }
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "slug": "/",
+      "isSystem": true,
+      "sections": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "content": {
+            "subtitle": "Minneapolis Luxury Transportation",
+            "heading": "Erix Coach & Car",
+            "headingAccent": "Limo Service",
+            "tagline": "Safety, Reliability, Communication & Quality = TRUST",
+            "phone": "+1-952-208-4920",
+            "email": "info@erixmn.com",
+            "bookingUrl": "https://erixmn.addons.la/m/portal/?k=6ycYDgvrBmXpcbrsfkbx",
+            "chatUrl": "https://ai-chat-for-lead-generation-b28cd4.zapier.app/"
+          }
+        },
+        {
+          "id": "marriott",
+          "type": "cta-block",
+          "content": {
+            "heading": "AC by Marriott Bloomington Mall of America",
+            "text": "Please provide the Street address, City, State and Zip",
+            "buttonText": "Admin Booking",
+            "buttonUrl": "https://erixmn.addons.la/m/portal/?k=Z8xVyqWoPtWrWCfH1jRr"
+          }
+        },
+        {
+          "id": "gift-cards",
+          "type": "cta-block",
+          "content": {
+            "heading": "Erix Gift Cards",
+            "text": "Send the Gift of Transportation with an instant gift card to friends and family or buy it now for your future use.",
+            "buttonText": "Buy Now",
+            "buttonUrl": "https://squareup.com/gift/7V1TEXYKW0ZNF/order"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wine-tours",
+      "title": "Wine Tours",
+      "slug": "/wine-tours",
+      "isSystem": true,
+      "sections": []
+    },
+    {
+      "id": "amtrak",
+      "title": "Transportation to Amtrak",
+      "slug": "/transportation-to-amtrak",
+      "isSystem": true,
+      "sections": []
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "slug": "/contact",
+      "isSystem": true,
+      "sections": []
+    },
+    {
+      "id": "quote",
+      "title": "Get a Quote",
+      "slug": "/quote",
+      "isSystem": true,
+      "sections": []
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy Policy",
+      "slug": "/privacy-policy",
+      "isSystem": true,
+      "sections": []
+    }
+  ]
+}
