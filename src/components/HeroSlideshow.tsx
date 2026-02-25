@@ -11,7 +11,7 @@ const slides = [
   { src: "/images/hero-slide-4.webp", alt: "Professional limousine service Minneapolis", isLogo: false },
   { src: "/images/hero-slide-5.webp", alt: "Erix Coach - Driven to Succeed", isLogo: false },
   { src: "/images/hero-slide-2.webp", alt: "Erix Coach luxury SUV transportation", isLogo: false },
-  { src: "/images/hero-slide-7.webp", alt: "Erix Coach and Car branding", isLogo: true },
+  { src: "/images/hero-slide-9.webp", alt: "Erix Coach LLC logo", isLogo: true },
 ];
 
 export default function HeroSlideshow() {
